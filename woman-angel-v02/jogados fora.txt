@@ -1,0 +1,24 @@
+/*
+function getmoreinfo() {
+    if(inputBox.value != ''){
+        let valor = filtraDados();
+
+        if ( !valor.length ) {
+            window.location = "moreinfo.html?idrecebido="+valor.id;
+        }
+    }
+}
+*/
+
+function getmoreinfo() {
+    if(inputBox.value != ''){
+        let valor = filtraDados();
+        console.log(valor.value);
+
+        
+        if ( !valor.length ) {
+            window.open = "moreinfo.html?idrecebido="+valor.id;
+        }
+        
+    }
+}

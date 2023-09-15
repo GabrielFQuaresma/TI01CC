@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RotasPerigosas.css">
+    <script src="RotasPerigosas.js"></script>
+    <title>Rotas Perigosas</title>
+</head>
+
+<body>
+    <h1></h1>
+
+    <div clss="formSeguro" id="formPontoPerigoso">
+
+      <div class="inicial">Voltar à <a href="index.html">Página Inicial</a></div>
+
+      <a href="VisualizarRotas.html"><button class="botao" id="btnLocalAtual">Visualizar</button></a><br>
+<div class="combinacaolado">
+  <input type="radio" id="onibus" name="tiporuaav" checked>
+  <label for="onibus">Ônibus</label>
+</div>
+
+<div class="combinacaolado">
+  <input type="radio" id="metro" name="tiporuaav">
+  <label for="metro">Metrô</label>
+</div>
+
+<div class="inputBox onibus">
+  <input class="formPonto" type="text" id="campoMotorista" name="campoMotorista" required>
+  <label class="labelPonto" for="campoMotorista">Motorista: </label>
+</div>
+
+
+<div class="inputBox onibus">
+  <input class="formPonto" type="text" id="campoNumero" name="campoNumero" required>
+  <label class="labelPonto" for="campoNumero">Número da linha:</label>
+</div>
+      
+<div class="inputBox onibus">
+  <input class="formPonto" type="date" id="campoData" name="campoData" required>
+  <label class="labelPonto" for="campoData"> </label>
+</div>
+      
+<div class="inputBox metro">
+  <input class="formPonto" type="text" id="campoEstacao" name="campoEstacao" required>
+  <label class="labelPonto" for="campoEstacao">Estação: </label>
+</div>
+
+<div class="inputBox metro">
+  <input class="formPonto" type="date" id="campoData" name="campoData" required>
+  <label class="labelPonto" for="campoData"> </label>
+</div>
+      <div class="inputBox metro">
+        <h5>Sentido</h5>
+            <input type="radio" id="vilarinho" name="sentido" checked><label for="vilarinho">Vilarinho</label>
+        </div>
+
+        <div class="inputBox metro">
+            <input type="radio" id="eldorado" name="sentido"><label for="eldorado">Eldorado</label> 
+          </div>
+ <script> 
+ 
+ 
+ </script>
+        <div class="inputBox">
+            <textarea class="formPontog" rows="2" cols="30" id="campoMore" name="campoMore" required></textarea><label class="labelTA"
+                for="campoMore">Informações do ocorrido:</label>
+
+      <div id="enviado"></div>
+        <button class="botao" id="enviar">Salvar</button>
+      <p></p>
+
+    </div>
+
+
+    <script src="NovasRotas.js"></script>
+
+</body>
+
+</html>
